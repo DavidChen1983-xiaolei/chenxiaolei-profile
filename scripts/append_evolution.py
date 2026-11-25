@@ -86,9 +86,12 @@ def main():
         "target": args.target,
     }
     append_log(entry)
-    status = "C3 仅留日志，30 天后复核"
-    if args.level in {"C1", "C2"} and args.target:
+    if args.level == "C3":
+        status = "C3 仅留日志，30 天后复核"
+    elif args.target:
         status = apply_to_reference(args.target, args.distilled, entry["id"], args.level)
+    else:
+        status = "已记录，未指定写回目标"
     print(f"{entry['id']} 已记录。{status}")
     return 0
 
