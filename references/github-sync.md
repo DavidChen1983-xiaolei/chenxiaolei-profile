@@ -9,7 +9,7 @@
 
 本地目录本身就是底稿。GitHub 只解决跨设备与审计，不改变技能内容。
 
-当前状态（2026-11-25）：本地 git 已初始化，提交 `715f40c`、`dabcb41`、`7a6e33d`；用户手动建立私有空仓库，远端同步已启用，三个提交均已推送到 `origin/main`。连接器建仓接口返回 `403 Resource not accessible by integration`，故改由用户在网页建仓，本地 push 完成首次同步。
+当前状态（2026-11-25）：本地 git 已初始化；用户手动建立私有空仓库，远端同步已启用，所有本地提交均已推送到 `origin/main`。连接器建仓接口返回 `403 Resource not accessible by integration`，故改由用户在网页建仓，本地 push 完成首次同步。
 
 ## 二、仓库结构
 
